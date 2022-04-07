@@ -1,0 +1,168 @@
+.main-footer {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    box-shadow: 0px -5px 30px 5px rgba(0, 0, 0, 0.25);
+    background-color: $mainColor;
+
+    .logo {
+
+        img {
+            width: 170px;
+        }
+    }
+
+    .menu {
+
+        h4 {
+            font-size: 25px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            li {
+                margin-bottom: 15px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: $white;
+                    font-size: 20px;
+                    font-weight: 400;
+                    transition: 0.2s;
+
+                    &:hover {
+                        color: #969696;
+                    }
+                }
+            }
+        }
+    }
+
+    .horizontal-line {
+        display: block;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        height: 1px;
+        width: 100%;
+        background-color: $white;
+    }
+
+    .text-holder {
+        text-align: center;
+
+        p {
+            font-size: 16px;
+            font-weight: 400;
+        }
+    }
+}
+
+// Media Queries
+
+@media (max-width: 1200px) {
+
+    .main-footer {
+
+        .logo {
+
+            img {
+                width: 90px;
+            }
+        }
+
+        .menu {
+
+            h4 {
+                font-size: 22px;
+            }
+
+            ul {
+
+                li {
+
+                    a {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+
+    .main-footer {
+
+        .logo {
+            display: block;
+            width: 100%;
+            
+            img {
+                width: 210px;
+                margin-bottom: 30px;
+            }
+        }
+
+        .menu {
+            display: block;
+            width: 100%;
+            margin-bottom: 30px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            h4 {
+                font-size: 39px;
+            }
+
+            ul {
+
+                li {
+
+                    a {
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+
+        .text-holder {
+
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+    .main-footer {
+
+        .menu {
+            
+            h4 {
+                font-size: 34px;
+            }
+
+            ul {
+
+                li {
+
+                    a {
+                        font-size: 21px;
+                    }
+                }
+            }
+        }
+    }
+}

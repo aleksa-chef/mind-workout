@@ -1,0 +1,116 @@
+.modal {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+
+    padding: 50px;
+    background-color: $mainColor;
+    box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    width: 70%;
+
+    .close-btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: 20px;
+        margin-right: 40px;
+        font-size: 45px;
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+    h3 {
+        text-align: center;
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 40px;
+    }
+
+    p {
+        font-size: 18px;
+        font-weight: 400;
+        margin-bottom: 40px;
+    }
+
+    .btns-holder {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        max-width: 100%;
+
+        li {
+            margin-right: 40px;
+
+            a {
+                font-size: 20px;
+                font-weight: 500;
+                padding: 11px 25px;
+                border: 1px solid $white;
+                background-color: transparent;
+                border-radius: 100px;
+                text-decoration: none;
+                color: $white;
+                display: inline-block;
+                white-space: nowrap;
+                transition: 0.2s;
+
+                &:hover {
+                    background-color: $white;
+                    color: $mainColor;
+                }
+            }
+        }
+    }
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 5;
+}
+
+.hidden {
+    display: none;
+}
+
+// Media Queries
+
+@media (max-width: 992px) {
+
+    .modal {
+        width: 90%;
+
+        p {
+            height: 300px;
+            overflow-y: scroll;
+        }
+
+        .btns-holder {
+            flex-wrap: wrap;
+
+            li {
+                display: block;
+                width: 100%;
+                margin-bottom: 20px;
+                margin-right: 0;
+
+                a {
+                    display: block;
+                    width: 100%;
+                    text-align: center;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}

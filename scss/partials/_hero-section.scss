@@ -1,0 +1,129 @@
+.hero-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    .copy {
+        width: 577px;
+
+        h1 {
+        font-size: 52px;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 18px;
+        font-weight: 400;
+        color: #cacaca;
+        margin-bottom: 20px;
+    }
+
+    .cta-btn {
+        display: inline-block;
+        text-decoration: none;
+        color: $white;
+        font-size: 20px;
+        font-weight: 500;
+        padding: 21px 34px;
+        background-color: transparent;
+        border: 2px solid $white;
+        border-radius: 5px;
+        transition: 0.2s;
+
+        &:hover {
+            background-color: $white;
+            color: $mainColor;
+        }
+    }
+    }
+
+    .img-holder {
+        max-width: 542px;
+
+        img {
+            max-width: 100%;
+        }
+    }
+}
+
+// Media Queries
+
+@media (max-width: 1200px) {
+
+    .hero-section {
+
+        .copy {
+            width: 479px;
+
+            h1 {
+                font-size: 43px;
+            }
+        }
+
+        .img-holder {
+            max-width: 443px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+
+    .hero-section {
+
+        .copy {
+            width: 401px;
+
+            h1 {
+                font-size: 31px;
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-size: 16px;
+                margin-bottom: 10px;
+            }
+
+            .cta-btn {
+                font-size: 18px;
+            }
+        }
+
+        .img-holder {
+            max-width: 308px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+    .hero-section {
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+        .img-holder {
+            order: 1;
+            max-width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .copy {
+            order: 2;
+            width: 100%;
+
+            h1 {
+                font-size: 34px;
+                margin-bottom: 20px;
+            }
+
+            p {
+                font-size: 18px;
+                margin-bottom: 20px;
+            }
+
+            .cta-btn {
+                display: block;
+                text-align: center;
+            }
+        }
+    }
+}

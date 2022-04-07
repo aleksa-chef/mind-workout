@@ -1,0 +1,140 @@
+.meditations-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    .meditation {
+        display: flex;
+        align-items: center;
+
+        .img-holder {
+            max-width: 250px;
+            margin-right: 40px;
+
+            img {
+                max-width: 100%;
+            }
+        }
+
+        .copy {
+
+            h3 {
+                font-size: 30px;
+                font-weight: 600;
+                margin-bottom: 29px;
+            }
+
+            p {
+                font-size: 18px;
+                font-weight: 400;
+                margin-bottom: 29px;
+            }
+
+            .cta-btn {
+                font-size: 20px;
+                font-weight: 500;
+                display: inline-block;
+                padding: 21px 34px;
+                background-color: transparent;
+                border: 2px solid $white;
+                border-radius: 5px;
+                text-decoration: none;
+                color: $white;
+                transition: 0.2s;
+
+                &:hover {
+                    background-color: $white;
+                    color: $mainColor;
+                }
+            }
+        }
+    }
+}
+
+// Media Queries
+
+@media (max-width: 1200px) {
+
+    .meditations-section {
+
+        .meditation {
+
+            .copy {
+
+                h3 {
+                    margin-bottom: 23px;
+                }
+
+                p {
+                    font-size: 16px;
+                    margin-bottom: 24px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+
+    .meditations-section {
+        padding-top: 40px;
+        padding-bottom: 40px;
+
+        .meditation {
+            flex-wrap: wrap;
+
+            .img-holder {
+                margin-bottom: 40px;
+                margin-right: 0;
+            }
+
+            .copy {
+                display: block;
+                width: 100%;
+
+                h3 {
+                    margin-bottom: 20px;
+                }
+
+                p {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+    .meditations-section {
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+        .meditation {
+
+            .img-holder {
+                display: block;
+                max-width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .copy {
+
+                h3 {
+                    margin-bottom: 20px;
+                    text-align: center;
+                }
+
+                p {
+                    margin-bottom: 20px;
+                    text-align: center;
+                }
+
+                .cta-btn {
+                    display: block;
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,70 @@
+.contact-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    .e-mail {
+        margin-bottom: 40px;
+        
+        h3 {
+            font-size: 30px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        a {
+            font-size: 20px;
+            font-weight: 400;
+            text-decoration: none;
+            color: $white;
+            transition: 0.2s;
+
+            &:hover {
+                color: #969696;
+            }
+        }
+    }
+
+    .instagram {
+        margin-bottom: 60px;
+
+        h3 {
+            font-size: 30px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        a {
+            font-size: 20px;
+            font-weight: 400;
+            text-decoration: none;
+            color: $white;
+            transition: 0.2s;
+
+            &:hover {
+                color: #969696;
+            }
+        }
+    }
+
+    .img-holder {
+        width: 100%;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+// Media Queries
+
+@media (max-width: 768px) {
+
+    .contact-section {
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+        .instagram {
+            margin-bottom: 30px;
+        }
+    }
+}

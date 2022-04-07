@@ -1,0 +1,150 @@
+.main-header {
+    background-color: $mainColor;
+    box-shadow: 0px 5px 30px 5px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    height: 95.2px;
+
+    .logo {
+        margin-top: 19px;
+
+        img {
+            width: 170px;
+        }
+    }
+
+    .navigation {
+        display: flex;
+        overflow: hidden;
+
+        a {
+            text-decoration: none;
+            color: $white;
+            text-transform: uppercase;
+            font-size: 18px;
+            font-weight: 400;
+            padding: 34px 22px;
+
+            &:hover {
+                background-color: $activeLinkColor;
+                border-bottom: 2px solid $white;
+            }
+        }
+
+        .active {
+            background-color: $activeLinkColor;
+            border-bottom: 2px solid $white;
+        }
+    }
+
+    .hamburger-btn {
+        display: none;
+        cursor: pointer;
+
+        span {
+            display: block;
+            background-color: $white;
+            height: 4px;
+            width: 42px;
+            margin-bottom: 10px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+// Hamburger Menu
+
+.hamburger-menu {
+    background-color: #1d1d1d;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-top: 62px;
+    height: 0; // 403px
+    overflow: hidden;
+    transition: 0.5s;
+
+    a {
+        text-decoration: none;
+        color: $white;
+        text-transform: uppercase;
+        font-size: 29px;
+        font-weight: 400;
+        display: block;
+        padding: 20px;
+    }
+
+    .active {
+        background-color: #171717;
+    }
+}
+
+.hamburger-menu.active {
+    height: 403px;
+}
+
+// Media Queries
+
+@media (max-width: 1200px) {
+    
+    .main-header {
+
+        .navigation {
+
+            a {
+                font-size: 16px;
+                padding: 35px 22px;
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+
+    .main-header {
+        height: 77.2px;
+
+        .logo {
+
+            img {
+                width: 120px;
+            }
+        }
+
+        .navigation {
+
+            a {
+                padding: 26px 11px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+    .main-header {
+        height: 100%;
+        padding-top: 15px;
+        padding-bottom: 15px;
+
+        .logo {
+            margin-top: 0;
+            height: 32px;
+
+            img {
+                width: 95px;
+            }
+        }
+
+        .navigation {
+            display: none;
+        }
+
+        .hamburger-btn {
+            display: block;
+        }
+    }
+}
